@@ -60,6 +60,8 @@
 
                     let html = edjsParser.parse(editorjs_clean_data);
 
+                    html = (String(html)).split(',').join('');
+
                     navigator.clipboard.writeText(html)
 
                     alert('コピーしました');
